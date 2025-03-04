@@ -79,7 +79,8 @@ void send_http_request(const char *host, int port, const char *endpoint) {
     if (len < 0) 
     {
         perror("Receive failed");
-    } 
+    }
+
     else 
     {
         response[len] = '\0';
